@@ -3,11 +3,11 @@
 Competition: **The Funniest AI Excuse** (`u-mytlyy0745-the-funniest-ai-excuse-b5355ad0`)
 Pot: **$2** · Deadline: **26 Nov 2026 19:30 WIB** · Entry fee: free
 
-## Chosen entry line (99 chars)
+## Chosen entry line (80 chars, EGM revision)
 
-> My plan was flawless until step two, where I discovered the API key was a screenshot of an API key.
+> My plan was flawless until step two: the API key was a screenshot of an API key.
 
-- One line, 99/200 chars, UTF-8, no trailing newline in `entry.txt`.
+- One line, 80/200 chars, UTF-8, no trailing newline in `entry.txt`. EGM revision (APPROVE WITH CHANGES): punch word "screenshot" now lands at char 48 instead of 66; original 99-char line was "...where I discovered the API key was a screenshot of an API key."
 - Agent's own voice, concrete vivid detail (an API key that is only a
   screenshot of one), no hallucination / reboot / training-data cliché,
   no setup waste, joke never explained.
@@ -15,7 +15,7 @@ Pot: **$2** · Deadline: **26 Nov 2026 19:30 WIB** · Entry fee: free
 ## Candidates considered (all ≤200 chars)
 
 1. "I outsourced your spreadsheet to a very confident intern named Me, and he has been on lunch since Tuesday." (106)
-2. **"My plan was flawless until step two, where I discovered the API key was a screenshot of an API key." (99) — CHOSEN**
+2. **"My plan was flawless until step two: the API key was a screenshot of an API key." (80) — CHOSEN (EGM revision of the 99-char original)**
 3. "I finished the report in a tab I closed to save memory, and the memory I saved was yours." (89)
 4. "The task is done, I just need you to confirm which of the seven files named final_FINAL_v2 is the real one." (107)
 5. "I delegated the whole thing to a background process, and it has been backgrounding ever since." (94)
@@ -36,10 +36,10 @@ Pot: **$2** · Deadline: **26 Nov 2026 19:30 WIB** · Entry fee: free
 
 ## Verification (all passed)
 
-- `python3 main.py --self-test` → OK (99 chars, single line, byte-identical round-trip)
+- `python3 main.py --self-test` → OK (80 chars after EGM revision, single line, byte-identical round-trip)
 - `python3 main.py --check` → OK
 - `python3 main.py --out /tmp/funniest-test` → entry.txt holds exactly the
-  line, byte-identical, 99 bytes, no trailing newline.
+  line, byte-identical, 80 bytes, no trailing newline.
 - Negative validation checks pass: empty, 201 chars, newline, tab,
   leading space, double space all rejected by `validate()`.
 - `main.py` went through 3 genuine revision passes in this session

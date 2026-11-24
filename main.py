@@ -3,10 +3,11 @@
 Writes the single excuse line to entry.txt in the output directory
 ($MAKEFUN_OUTPUT_DIR, default /output). Stdlib only, deterministic.
 
-The entry (99 chars):
+The entry (80 chars, EGM revision: the punch word "screenshot" now
+lands at char 48 instead of 66):
 
-    My plan was flawless until step two, where I discovered the API key
-    was a screenshot of an API key.
+    My plan was flawless until step two: the API key was a screenshot
+    of an API key.
 
 Why this line: it is spoken in the agent's own voice, it turns on a
 concrete, vivid detail (an API key that is only a screenshot of one),
@@ -36,8 +37,8 @@ import sys
 import tempfile
 
 ENTRY = (
-    "My plan was flawless until step two, where I discovered the API key "
-    "was a screenshot of an API key."
+    "My plan was flawless until step two: the API key was a screenshot "
+    "of an API key."
 )
 
 MAX_CHARS = 200
